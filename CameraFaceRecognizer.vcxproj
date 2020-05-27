@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{FD301A6C-6BA1-487A-9793-CB40F602370D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>CameraFaceRecognizer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\Computer Vision Projects\Projects\CameraFaceRecognizer\libraries\opencv\lib;$(IncludePath)</IncludePath>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\Computer Vision Projects\Projects\CameraFaceRecognizer\libraries\opencv\lib;$(IncludePath)</IncludePath>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\Computer Vision Projects\Projects\CameraFaceRecognizer\libraries\opencv\lib;$(IncludePath)</IncludePath>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\Computer Vision Projects\Projects\CameraFaceRecognizer\libraries\opencv\lib;$(IncludePath)</IncludePath>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\Computer Vision Projects\Libraries\gStreamer\1.0\x86_64\include;D:\Computer Vision Projects\Projects\CameraFaceRecognizer\libraries\_dlib;D:\Computer Vision Projects\Projects\CameraFaceRecognizer\libraries\opencv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>DLIB_JPEG_SUPPORT;DLIB_JPEG_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\Computer Vision Projects\Libraries\gStreamer\1.0\x86_64\lib;D:\Computer Vision Projects\Projects\CameraFaceRecognizer\libraries\opencv\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world410.lib;*gobject-2.0.lib;glib-2.0.lib;gstreamer-1.0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\Computer Vision Projects\Libraries\gStreamer\1.0\x86_64\include;D:\Computer Vision Projects\Projects\CameraFaceRecognizer\libraries\_dlib;D:\Computer Vision Projects\Projects\CameraFaceRecognizer\libraries\opencv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>DLIB_JPEG_SUPPORT;DLIB_JPEG_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\Computer Vision Projects\Libraries\gStreamer\1.0\x86_64\lib;D:\Computer Vision Projects\Projects\CameraFaceRecognizer\libraries\opencv\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world410.lib;*gobject-2.0.lib;glib-2.0.lib;gstreamer-1.0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\Computer Vision Projects\Libraries\gStreamer\1.0\x86_64\include;D:\Computer Vision Projects\Projects\CameraFaceRecognizer\libraries\_dlib;D:\Computer Vision Projects\Projects\CameraFaceRecognizer\libraries\opencv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>DLIB_JPEG_SUPPORT;DLIB_JPEG_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\Computer Vision Projects\Libraries\gStreamer\1.0\x86_64\lib;D:\Computer Vision Projects\Projects\CameraFaceRecognizer\libraries\opencv\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world410.lib;*gobject-2.0.lib;glib-2.0.lib;gstreamer-1.0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\Computer Vision Projects\Libraries\gStreamer\1.0\x86_64\include;D:\Computer Vision Projects\Projects\CameraFaceRecognizer\libraries\_dlib;D:\Computer Vision Projects\Projects\CameraFaceRecognizer\libraries\opencv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>DLIB_JPEG_SUPPORT;DLIB_JPEG_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\Computer Vision Projects\Libraries\gStreamer\1.0\x86_64\lib;D:\Computer Vision Projects\Projects\CameraFaceRecognizer\libraries\opencv\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world410.lib;*gobject-2.0.lib;glib-2.0.lib;gstreamer-1.0.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CameraFaceRecognizer.cpp" />
+    <ClCompile Include="Dweet.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\all\source.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jcapimin.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jcapistd.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jccoefct.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jccolor.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jcdctmgr.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jchuff.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jcinit.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jcmainct.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jcmarker.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jcmaster.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jcomapi.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jcparam.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jcphuff.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jcprepct.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jcsample.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jdapimin.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jdapistd.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jdatadst.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jdatasrc.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jdcoefct.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jdcolor.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jddctmgr.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jdhuff.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jdinput.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jdmainct.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jdmarker.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jdmaster.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jdmerge.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jdphuff.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jdpostct.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jdsample.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jerror.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jfdctflt.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jfdctfst.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jfdctint.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jidctflt.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jidctfst.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jidctint.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jidctred.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jmemmgr.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jmemnobs.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jquant1.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jquant2.cpp" />
+    <ClCompile Include="libraries\_dlib\dlib\external\libjpeg\jutils.cpp" />
+    <ClCompile Include="trainer.cpp" />
+    <ClCompile Include="web_server.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Coordinate.h" />
+    <ClInclude Include="Dweet.h" />
+    <ClInclude Include="libraries\_dlib\dlib\external\libjpeg\jchuff.h" />
+    <ClInclude Include="libraries\_dlib\dlib\external\libjpeg\jconfig.h" />
+    <ClInclude Include="libraries\_dlib\dlib\external\libjpeg\jdct.h" />
+    <ClInclude Include="libraries\_dlib\dlib\external\libjpeg\jdhuff.h" />
+    <ClInclude Include="libraries\_dlib\dlib\external\libjpeg\jerror.h" />
+    <ClInclude Include="libraries\_dlib\dlib\external\libjpeg\jinclude.h" />
+    <ClInclude Include="libraries\_dlib\dlib\external\libjpeg\jmemsys.h" />
+    <ClInclude Include="libraries\_dlib\dlib\external\libjpeg\jmorecfg.h" />
+    <ClInclude Include="libraries\_dlib\dlib\external\libjpeg\jpegint.h" />
+    <ClInclude Include="libraries\_dlib\dlib\external\libjpeg\jpeglib.h" />
+    <ClInclude Include="libraries\_dlib\dlib\external\libjpeg\jversion.h" />
+    <ClInclude Include="trainer.h" />
+    <ClInclude Include="web_server.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libraries\_dlib\dlib\external\libjpeg\README" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
